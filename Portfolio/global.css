@@ -1,0 +1,270 @@
+ @charset "utf-8";
+ body{
+	 font-family: Verdana, Helvetica, Arial, sans-serif;
+	 background-color: #1d55ff;
+	 color: black;
+	 font-size: 20px;
+ }
+div.content{ /*changes the content area*/
+	background-color: white;
+	color: black;
+	margin: 25px;
+	border: 20px solid black; 
+	padding: 2%;
+}
+h1 {/*changes the headings*/
+	color:black;
+	font-weight: bold;
+}
+h2 {
+	color:black;
+	font-weight: bold;
+}
+h3 {
+	color:black;
+	font-weight: bold;
+}
+h4 {
+	color:black;
+	font-weight: bold;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+li {
+    float: left;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+	width:75%;
+}
+
+td {/*change table parts*/
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+	color: white;
+	background-color: black;
+	border: 1px solid white;
+    border-collapse: collapse;
+}
+
+div.fixed {/*puts this eternally in 1 place*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+	background-color: blue;
+	border-bottom: 20 px black;
+}
+a{/*change link stuff*/
+	color: black
+}
+a:hover{
+	color: orange
+}
+li a {
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
+	color: orange;
+}
+img.float{</*floating*/
+	float: right;
+	border:5px solid #021a40;
+	margin: 5px
+}
+img.fl{
+	float:left;
+	border:5px solid #021a40;
+	margin: 5px;
+}
+div.float{
+	float: right;
+}
+div.fl{
+	float: left;
+}
+a.button{/*makes buttons*/
+	background-color: black;
+    border: none;
+    color: blue;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 50px;
+	-webkit-transition-duration: 3s; 
+    transition-duration: 3s;
+}
+.button:hover {
+	background-color: black;
+    border: none;
+    color: red;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 50px;
+}
+image.fm {
+	float: center;
+	border: 5px solid #021a40;
+	margin: 5px
+}
+img.floatnb {
+	float: right;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: #000000;
+  color: Blue;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index:20
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 20;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
